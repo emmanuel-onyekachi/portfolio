@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: rgb(244,247,249);
+    background: linear-gradient(90deg, rgba(244,247,249,1) 45%, rgba(255,255,255,1) 50%, rgba(244,247,249,1) 55%);
+
+
+}
+@keyframes tickle {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(120deg);}
+}
+
+.hand{
+    animation: tickle 1s linear 1s 7 alternate-reverse;
+}
+@keyframes soft {
+    from{transform: translateY(-100px);}
+    to{transform: translateY(150px);}
+}
+
+.dev{
+    animation: soft 10s linear 0s infinite alternate-reverse;
+}
+@keyframes front {
+    0%{width: 0%}
+    100%{width: 100%}
+}
+.frontend{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: front 10s steps(200, end) forwards;
+    animation-iteration-count: infinite;
+}
+.image{
+    cursor: pointer;
+}
+.cta-button{
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 15px 45%;
+    color: black;
+    border-radius: 13px;
+    background-color: #209ce5;
+    animation: mybutton 10s linear 2s infinite alternate-reverse;
+}
+@keyframes mybutton {
+    0% {background-color: #209ce5; color: black; }
+    25% {background-color: #32296c; color: white; }
+    50% {background-color: white; color: black; }
+    75% {background-color: #209ce5; color: black; }
+    100% {background-color: white; color: black; }
+}
